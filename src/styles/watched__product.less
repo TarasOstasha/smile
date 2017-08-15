@@ -1,0 +1,73 @@
+.watched__groupTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  .shoppers__products {
+    font-family: 'ProximaNovaBold';
+    font-size: 28px;
+    margin-right: 105px;
+  }
+  .all__watchedProduct {
+    display: flex;
+    align-items: center;
+    a {
+      font-family: 'ProximaNovaRegular';
+      font-size: 14px;
+      color: @standartTextColor;
+      text-decoration: underline;
+    }
+
+    i {
+      color: #fb2539;
+      margin-left: 12px;
+    }
+  }
+}
+.watched__productSlides {
+  .watchedSlide-wrapper {
+    border: 2px solid #eff0f3;
+    padding: 35px 23px;
+  }
+  .watchedSlide-wrapper:hover {
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .fa-angle-left {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: 15px 20px;
+    background: #3c3f43;
+    color: #fff;
+    font-size: 20px;
+    z-index: 1;
+    cursor: pointer;
+    height: 50%;
+    display: flex;
+    align-items:center;
+  }
+  .fa-angle-left:hover {
+    background: #474a4e;
+  }
+  .fa-angle-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px 20px;
+    background: #3c3f43;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    height: 50%;
+    display: flex;
+    align-items:center;
+  }
+  .fa-angle-right:hover {
+    background: #474a4e;
+  }
+}
+.bnt__byProduct:hover {
+  background: darken(#fb2539, 20%);
+  transition: .5s;
+}

@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>smile-test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vendor.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.css">
+</head>
+<body>
+<a href="#" class="back-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
+<div class="main-wrapper">
+    <header>
+        <div class="header__top-section">
+            <div class="container">
+                <div class="header__top">
+                    <ul class="Left-nav__menu">
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Магазины</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Бонусная программа</a></li>
+                    </ul>
+                    <ul class="lenguage-nav_menu">
+                        <li><a href="#">Рус</a></li>
+                        <li><a href="#">Укр</a></li>
+                    </ul>
+                    <div class="city__choice">
+                        <span>Ваш город:</span>
+                        <select id="city">
+                            <option>Киев</option>
+                            <option>Тернополь</option>
+                        </select>
+                        <script>
+                            (function(){
+                                var select = document.getElementById('city');
+                                if (localStorage.city) {
+                                    select.value = localStorage.city;
+                                }
+                                select.onchange = function() {
+                                    localStorage.city = this.value;
+                                }
+                            })()
+                        </script>
+                    </div>
+                    <ul class="users__menu">
+                        <li class="enter-user">
+                            <a href="#"><i class="fa fa-unlock-alt" aria-hidden="true"></i>&nbsp;Вход</a>
+                        </li>
+                        <li class="registration">
+                            <a href="#">Регистрация</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__middle">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/header/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="search__form">
+                    <input type="text" placeholder="Поиск по названию,коду,категории товара">
+                    <i class="fa fa-search searchHeader" aria-hidden="true"></i>
+                </div>
+                <div class="callback">
+                    <span class="number__callback">0-800-30-15-85</span>
+                    <span class="glyphicon glyphicon-menu-down"></span>
+                    <a href="#" class="callback__link">Обратный звонок</a>
+                </div>
+                <ul class="header__middleIconNav">
+                    <li>
+                        <a href="#">
+                            <img src="images/header/icon-garage.png" alt="">
+                            <p>Гараж</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="favorites__product">
+                            <img src="images/header/icon-heart.png" alt="">
+                            <p>Избранное</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/header/icon-libra.png" alt="">
+                            <p>Сравнение</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/header/icon-basket.png" alt="">
+                            <p>Корзина</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <ul class="main__navMenu">
+                    <li>
+                        <a href="#">
+                            <img class="main__navMenuIcon-hover" src="" alt="">
+                            каталог товаров &nbsp;
+                            <img src="images/header/gamburger-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/header/percent-icon.png" alt="">
+                            &nbsp;
+                            акции
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/header/diagrama-icon.png" alt="">
+                            &nbsp;
+                            сравнительные тесты
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/header/question_mark-icon.png" alt="">
+                            &nbsp;
+                            как выбрать
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/header/news-icon.png" alt="">
+                            &nbsp;
+                            новости
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="bread__crumbs">
+                <ul class="bread__crumsLink">
+                    <li>
+                        <a href="#">
+                            Главная <span> > </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Запчасти и расходники <span> > </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Масло <span> > </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Моторное масло <span> > </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Mobil <span> > </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Моторное масло MOBIL Super 3000 X1 5W-40, 4Л
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="3d__viewSection">
+                <h1>Моторное масло MOBIL Super 3000 X1 5W-40, 4Л</h1>
+                <div class="row__bigProduct">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="product-slider">
+                                <ul class="bxslider">
+                                    <li><img src="images/3dview/1.png"/></li>
+                                    <li><img src="http://placehold.it/282x382"/></li>
+                                    <li><img src="images/3dview/1.png"/></li>
+                                    <li><img src="http://placehold.it/282x382"/></li>
+                                </ul>
+                                <div id="bx-pager" class="bx-pager">
+                                    <a data-slide-index="0" href=""><img class="firstImg" src="images/3dview/3.png"/></a>
+                                    <a data-slide-index="1" href=""><img class="twoImg" src="images/3dview/6.png"/></a>
+                                    <a data-slide-index="2" href=""><img class="threeImg" src="images/3dview/5.png"/></a>
+                                    <a data-slide-index="3" href=""><img class="fourImg" src="images/3dview/4.png"/></a>
+                                    <a data-slide-index="3" href=""><img class="fiveImg" src="images/3dview/4.png"/></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="info__3dview">
+                                <div class="ratingInfo__3dviews">
+                                    <ul>
+                                        <li><span>Нет в наличии</span></li>
+                                        <li class="icon__rating3dView">
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                        </li>
+                                        <li>
+                                            <div class="reviewByProducts">
+                                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                                <a href="#" tabindex="0">
+                                                    3 отзыва
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="reviewByProducts">
+                                                <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                                                <a href="#" tabindex="0">
+                                                    4 вопроса
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span>456 грн</span>
+                                <button>
+                                    Сообщить о поступлении
+                                </button>
+                                <div class="info__3dviewText">
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit.
+                                    Harum minima sint unde.
+                                    Consectetur doloremque dolorum ipsum minima,
+                                    natus placeat possimus quisquam?
+                                    Eaque, ipsam, necessitatibus?
+                                    Accusamus culpa ex facere labore voluptates?
+                                </div>
+                                <div class="bottomInfo__3dview">
+                                    <div class="share">
+                                        <div class="icon__share">
+                                            <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                        </div>
+                                        <a href="#" class="text__share">
+                                            Поделиться
+                                        </a>
+                                    </div>
+                                    <div class="compare">
+                                        <div class="icon__compare">
+                                            <img src="images/products/libra.png" alt="">
+                                        </div>
+                                        <a href="#" class="text__compare">
+                                            Сравнить
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product__choice product__choice3dview">
+                                <div class="article__similar">
+                                    Похожий товар
+                                </div>
+                                <div class="choice__img">
+                                    <img src="images/products/sidebar.png" alt="">
+                                </div>
+                                <p class="instockSidebar">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    В наличии
+                                </p>
+                                <p class="info__sidebar">
+                                    Моторное масло Liqui Moly TOP
+                                    TEC 4100 5W-40 4
+                                </p>
+                                <p class="sidebar__coast">
+                                    326 грн
+                                </p>
+                                <a href="#" class="showSimilarProduct">
+                                    Показать похожие товары
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <p class="similar__products">Похожие товары</p>
+                <div class="product__slides">
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/products/1.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/products/2.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/products/3.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/products/4.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div><div class="img__product">
+                        <span class="sale__product">Скидка -10%</span>
+                        <img src="images/products/1.png" alt="">
+                    </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div></div>
+
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/products/5.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/products/1.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/products/1.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/products/1.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/products/1.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__characteristics">
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTabs(event, 'Characteristics')" id="defaultCharacteristics">Характеристики</button>
+                        <button class="tablinks" onclick="openTabs(event, 'Description')">Описание</button>
+                        <button class="tablinks" onclick="openTabs(event, 'Questions')">Отзывы и вопросы(40)</button>
+                        <button class="tablinks" onclick="openTabs(event, 'Video-review')">Видеообзоры и статьи</button>
+                        <button class="tablinks" onclick="openTabs(event, 'Certificates')">Сертификаты</button>
+                    </div>
+
+                    <div id="Characteristics" class="tabcontent">
+                        <h3 class="h3__class">Характеристики товара</h3>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <table class="table table__product">
+                                    <tbody>
+                                    <tr class="table-active">
+                                        <td>Клас вязкости:</td>
+                                        <td>5W-40</td>
+                                    </tr>
+                                    <tr>
+                                        <td>оСт при 40С</td>
+                                        <td>84</td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td>оСт при 40С</td>
+                                        <td>14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Зольность сульфатная,% мас., ASTMD D 874 </td>
+                                        <td>1.1</td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td>Содержание фосфора</td>
+                                        <td>0.0095</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Тепература вспышки,С ASTMD D 92</td>
+                                        <td>222</td>
+                                    </tr>
+                                    <tr class="table-active">
+                                        <td>Тепература застывание,С ASTMD D 97</td>
+                                        <td>-39</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <p class="more__characteristics">
+                                    <i class="glyphicon glyphicon-chevron-down rotate" aria-hidden="true"></i>
+                                    Показать все характеристики
+                                </p>
+                                <div class="panel">
+                                    <div>
+                                        <h3>Описание товара</h3>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Accusantium aliquid animi assumenda autem cupiditate debitis
+                                            esse excepturi fugit, illo ipsa laboriosam libero nihil, officia unde vitae.
+                                            Animi aperiam recusandae rem.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            A accusamus amet asperiores consequuntur culpa dignissimos eius facilis fugiat
+                                            ipsum itaque nam quam quis ratione reprehenderit saepe, sed sunt, velit vero.
+                                        </p>
+                                        <p class="more__detailsProduct">
+                                            <i class="glyphicon glyphicon-chevron-down rotate" aria-hidden="true"></i>
+                                            Подробнее
+                                        </p>
+                                        <p class="category-show" style="display: none">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Deleniti harum molestiae numquam quas quis quisquam vero?
+                                            Animi atque aut dolor earum error ipsa laborum libero magni,
+                                            natus nisi nulla omnis, qui quisquam reiciendis repellat unde
+                                            vitae! Architecto at consectetur eius eveniet ex ipsa laborum,
+                                            obcaecati pariatur, quaerat similique veniam voluptate.
+                                        </p>
+                                        <div class="panel-second">
+                                            <div class="product__question">
+
+                                                <ul class="nav nav-tabs nav-tabs-product">
+                                                    <li class="active">
+                                                        <a data-toggle="tab" href="#home">
+                                                            Отзивы(10)
+                                                        </a>
+                                                    </li>
+                                                    <li><a data-toggle="tab" href="#menu1">Вопросы(7)</a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div id="home" class="tab-pane fade in active">
+                                                        <a href="javascript:void(0);" class="sent__review">
+                                                            Оставить отзыв
+                                                        </a>
+                                                        <div class="reviews-wrapper">
+                                                            <div class="section__review">
+                                                                <table class="table__review">
+                                                                    <tr>
+                                                                        <th>Владимир <span>04.07.2016</span></th>
+                                                                        <th class="col-mark">Оценка</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="reviews-users">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                                            Architecto at cumque ducimus, ea et fuga, hic laborum nobis non
+                                                                            placeat praesentium quos suscipit voluptate? Atque distinctio
+                                                                            ducimus fugiat hic illum iure laudantium, libero nisi quas quos
+                                                                            repudiandae rerum, sapiente velit.
+                                                                            <p class="read__more">
+                                                                                <i class="glyphicon glyphicon-chevron-down rotate" aria-hidden="true"></i>
+                                                                                Читать полностью
+                                                                            </p>
+                                                                            <p class="hidden_readmore" style="display: none;">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                                                Accusantium aspernatur commodi eligendi esse harum,
+                                                                                ipsa iste magnam molestias nesciunt odit officia officiis quaerat,
+                                                                                qui quibusdam quod repellendus similique ut voluptas!
+                                                                            </p>
+                                                                        </td>
+                                                                        <td class="rating-mark">
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star default-star" aria-hidden="true"></i>
+                                                                            <i class="mark-value">4.0</i>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="worth__product"><span>Достоинства: </span> Lorem ipsum dolor sit amet.</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="limitations__products"><span>Недостатки: </span> Lorem ipsum dolor sit amet.</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="personal__review">
+                                                                            <span class="show__reviews">1 ответ</span>
+                                                                            &nbsp; &nbsp;
+                                                                            <span class="answer-product">Ответить</span>
+                                                                            <span class="rating__answer pull-right">
+                                                                                Был ли вам полезен етот отзив
+                                                                                <i class="fa fa-thumbs-o-up" aria-hidden="true">&nbsp; <span class="like">14</span></i>
+                                                                                &nbsp;
+                                                                                <i class="fa fa-thumbs-o-down" aria-hidden="true">&nbsp; <span class="unlike">2</span></i>
+                                                                            </span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <div class="section__review">
+                                                                <table class="table__review">
+                                                                    <tr>
+                                                                        <th>Владимир <span>04.07.2016</span></th>
+                                                                        <th class="col-mark">Оценка</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="reviews-users">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                                            Architecto at cumque ducimus, ea et fuga, hic laborum nobis non
+                                                                            placeat praesentium quos suscipit voluptate? Atque distinctio
+                                                                            ducimus fugiat hic illum iure laudantium, libero nisi quas quos
+                                                                            repudiandae rerum, sapiente velit.
+                                                                            <p class="read__more">
+                                                                                <i class="glyphicon glyphicon-chevron-down rotate" aria-hidden="true"></i>
+                                                                                Читать полностью
+                                                                            </p>
+                                                                            <p class="hidden_readmore" style="display: none;">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                                                Accusantium aspernatur commodi eligendi esse harum,
+                                                                                ipsa iste magnam molestias nesciunt odit officia officiis quaerat,
+                                                                                qui quibusdam quod repellendus similique ut voluptas!
+                                                                            </p>
+                                                                        </td>
+                                                                        <td class="rating-mark">
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star default-star" aria-hidden="true"></i>
+                                                                            <i class="mark-value">4.0</i>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="worth__product"><span>Достоинства: </span> Lorem ipsum dolor sit amet.</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="limitations__products"><span>Недостатки: </span> Lorem ipsum dolor sit amet.</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="personal__review">
+                                                                            <span class="show__reviews">1 ответ</span>
+                                                                            &nbsp; &nbsp;
+                                                                            <span class="answer-product">Ответить</span>
+                                                                            <span class="rating__answer pull-right">
+                                                                                Был ли вам полезен етот отзив
+                                                                                <i class="fa fa-thumbs-o-up" aria-hidden="true">&nbsp; <span class="like">14</span></i>
+                                                                                &nbsp;
+                                                                                <i class="fa fa-thumbs-o-down" aria-hidden="true">&nbsp; <span class="unlike">2</span></i>
+                                                                            </span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                            <div class="section__review">
+                                                                <table class="table__review">
+                                                                    <tr>
+                                                                        <th>Владимир <span>04.07.2016</span></th>
+                                                                        <th class="col-mark">Оценка</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="reviews-users">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                                            Architecto at cumque ducimus, ea et fuga, hic laborum nobis non
+                                                                            placeat praesentium quos suscipit voluptate? Atque distinctio
+                                                                            ducimus fugiat hic illum iure laudantium, libero nisi quas quos
+                                                                            repudiandae rerum, sapiente velit.
+                                                                            <p class="read__more">
+                                                                                <i class="glyphicon glyphicon-chevron-down rotate" aria-hidden="true"></i>
+                                                                                Читать полностью
+                                                                            </p>
+                                                                            <p class="hidden_readmore" style="display: none;">
+                                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                                                Accusantium aspernatur commodi eligendi esse harum,
+                                                                                ipsa iste magnam molestias nesciunt odit officia officiis quaerat,
+                                                                                qui quibusdam quod repellendus similique ut voluptas!
+                                                                            </p>
+                                                                        </td>
+                                                                        <td class="rating-mark">
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star default-star" aria-hidden="true"></i>
+                                                                            <i class="mark-value">4.0</i>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="worth__product"><span>Достоинства: </span> Lorem ipsum dolor sit amet.</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="limitations__products"><span>Недостатки: </span> Lorem ipsum dolor sit amet.</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="personal__review">
+                                                                            <span class="show__reviews">1 ответ</span>
+                                                                            &nbsp; &nbsp;
+                                                                            <span class="answer-product">Ответить</span>
+                                                                            <span class="rating__answer pull-right">
+                                                                                Был ли вам полезен етот отзив
+                                                                                <i class="fa fa-thumbs-o-up" aria-hidden="true">&nbsp; <span class="like">14</span></i>
+                                                                                &nbsp;
+                                                                                <i class="fa fa-thumbs-o-down" aria-hidden="true">&nbsp; <span class="unlike">2</span></i>
+                                                                            </span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <p class="more__productReviews">
+                                                            <i class="glyphicon glyphicon-chevron-down rotate" aria-hidden="true"></i>
+                                                            Показать все отзивы
+                                                        </p>
+                                                        <div class="more__productReviews">
+                                                            <div class="section__review category-showReview" style="display: none">
+                                                                <table class="table__review">
+                                                                    <tr>
+                                                                        <th>Владимир <span>04.07.2016</span></th>
+                                                                        <th class="col-mark">Оценка</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="reviews-users">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                                            Architecto at cumque ducimus, ea et fuga, hic laborum nobis non
+                                                                            placeat praesentium quos suscipit voluptate? Atque distinctio
+                                                                            ducimus fugiat hic illum iure laudantium, libero nisi quas quos
+                                                                            repudiandae rerum, sapiente velit.
+                                                                        </td>
+                                                                        <td class="rating-mark">
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star" aria-hidden="true"></i>
+                                                                            <i class="fa fa-star default-star" aria-hidden="true"></i>
+                                                                            <i class="mark-value">4.0</i>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="worth__product"><span>Достоинства: </span> Lorem ipsum dolor sit amet.</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="limitations__products"><span>Недостатки: </span> Lorem ipsum dolor sit amet.</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="personal__review">
+                                                                            <span class="show__reviews">1 ответ</span>
+                                                                            &nbsp; &nbsp;
+                                                                            <span class="answer-product">Ответить</span>
+                                                                            <span class="rating__answer pull-right">
+                                                                                Был ли вам полезен етот отзив
+                                                                                <i class="fa fa-thumbs-o-up" aria-hidden="true">&nbsp; <span class="like">14</span></i>
+                                                                                &nbsp;
+                                                                                <i class="fa fa-thumbs-o-down" aria-hidden="true">&nbsp; <span class="unlike">2</span></i>
+                                                                            </span>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="menu1" class="tab-pane fade">
+                                                        <a href="javascript:void(0);" class="sent__review">
+                                                            Задать вопрос
+                                                        </a>
+                                                        <h3>Вопросы(7)</h3>
+                                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                                        <p class="more__productQuestion">
+                                                            <i class="glyphicon glyphicon-chevron-down rotate" aria-hidden="true"></i>
+                                                            Показать все вопросы
+                                                        </p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="characteristics__choice">
+                                    <div class="product__choice">
+                                        <div class="choice__img">
+                                            <img src="images/products/sidebar.png" alt="">
+                                        </div>
+                                        <p class="instockSidebar">
+                                            Нет в наличии
+                                        </p>
+                                        <p class="info__sidebar">
+                                            Моторное масло Liqui Moly TOP
+                                            TEC 4100 5W-40 4
+                                        </p>
+                                        <p class="sidebar__coast">
+                                            326 грн
+                                        </p>
+                                        <div class="incoming">
+                                            <a href="#">
+                                                Сообщить <br> о поступлении
+                                            </a>
+                                            <img src="images/products/libra.png" alt="">
+                                        </div>
+                                        <a href="#" class="showSimilarProduct">
+                                            Показать похожие товары
+                                        </a>
+                                    </div>
+                                    <div class="find__product">
+                                        <div class="titleProduct__car">
+                                            <i class="fa fa-check" aria-hidden="true"></i>
+                                            Товар подходит к вашему авто
+                                        </div>
+                                        <select id="Product__car" class="Product__car">
+                                            <option><span>Volcwagen golf,19</span></option>
+                                            <option>Land Rover</option>
+                                            <option>Kia</option>
+                                            <option>Dewoo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="Description" class="tabcontent">
+                        <h3>Описание товара</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aspernatur, consequuntur cupiditate deserunt dignissimos
+                            distinctio dolor doloribus earum et eveniet facilis ipsa,
+                            ipsam, itaque laborum maxime nemo nobis omnis quidem quisquam
+                            sit tenetur! Accusantium consectetur, cupiditate dignissimos
+                            eos exercitationem ipsum libero nobis odio pariatur quibusdam quis,
+                            recusandae similique ullam veritatis voluptatem.
+                        </p>
+                    </div>
+
+                    <div id="Questions" class="tabcontent">
+                        <h3>Отзыивы о товаре</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aspernatur, consequuntur cupiditate deserunt dignissimos
+                            distinctio dolor doloribus earum et eveniet facilis ipsa,
+                            ipsam, itaque laborum maxime nemo nobis omnis quidem quisquam
+                            sit tenetur! Accusantium consectetur, cupiditate dignissimos
+                            eos exercitationem ipsum libero nobis odio pariatur quibusdam quis,
+                            recusandae similique ullam veritatis voluptatem.
+                        </p>
+                    </div>
+                    <div id="Video-review" class="tabcontent">
+                        <h3>Видеообзор товара</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aspernatur, consequuntur cupiditate deserunt dignissimos
+                            distinctio dolor doloribus earum et eveniet facilis ipsa,
+                            ipsam, itaque laborum maxime nemo nobis omnis quidem quisquam
+                            sit tenetur! Accusantium consectetur, cupiditate dignissimos
+                            eos exercitationem ipsum libero nobis odio pariatur quibusdam quis,
+                            recusandae similique ullam veritatis voluptatem.
+                        </p>
+                    </div>
+                    <div id="Certificates" class="tabcontent">
+                        <h3>Сертифицырованый товар</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Aspernatur, consequuntur cupiditate deserunt dignissimos
+                            distinctio dolor doloribus earum et eveniet facilis ipsa,
+                            ipsam, itaque laborum maxime nemo nobis omnis quidem quisquam
+                            sit tenetur! Accusantium consectetur, cupiditate dignissimos
+                            eos exercitationem ipsum libero nobis odio pariatur quibusdam quis,
+                            recusandae similique ullam veritatis voluptatem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="video__review">
+                <div class="h3__class">
+                    Видеообзоры (2)
+                </div>
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-right-3">
+                        <div class="col-md-6" style="padding-left: 0">
+                            <div class="video__section">
+                                <div id="player"></div>
+                                <img src="images/products/play.png" alt="" class="btn-video">
+                                <!--<iframe id="one" width="560" height="315" src="https://www.youtube.com/embed/dN909P5RlCQ" frameborder="0" allowfullscreen></iframe>-->
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="video__section">
+                                <img src="images/products/play.png" alt="" class="" id="playYoutube">
+                                <iframe src="//www.youtube.com/embed/FKWwdQu6_ok?enablejsapi=1" width="560" height="315" frameborder="0" allowfullscreen id="video"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="articles">
+                <div class="row one">
+                    <div class="col-md-9 col-md-offset-right-3">
+                        <div class="h3__class">
+                            Статьи (2)
+                        </div>
+                        <div class="article__slides">
+                            <div class="current__articleSlide">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="row left__artickleRow">
+                                            <div class="col-md-5">
+                                                <div class="left__imgArticle">
+                                                    <img src="images/article/1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="info__article">
+                                                    <span class="data__article">
+                                                        16 августа 2016
+                                                    </span>
+                                                    <div class="title__article">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    </div>
+                                                    <div class="info__textArticle">
+                                                        Lorem ipsum dolor sit amet,
+                                                        consectetur adipisicing elit.
+                                                        Aliquam beatae corporis et minima tempora.
+                                                        Ab commodi delectus deleniti...
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="right__imgArticle">
+                                            <img src="images/article/2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="current__articleSlide">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="row left__artickleRow">
+                                            <div class="col-md-5">
+                                                <div class="left__imgArticle">
+                                                    <img src="images/article/1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="info__article">
+                                                    <span class="data__article">
+                                                        16 августа 2016
+                                                    </span>
+                                                    <div class="title__article">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    </div>
+                                                    <div class="info__textArticle">
+                                                        Lorem ipsum dolor sit amet,
+                                                        consectetur adipisicing elit.
+                                                        Aliquam beatae corporis et minima tempora.
+                                                        Ab commodi delectus deleniti,
+                                                        dolorum facere ipsa perspiciatis tempore.
+                                                        Necessitatibus, veritatis...
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="right__imgArticle">
+                                            <img src="images/article/2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="Certificates">
+                <div class="row">
+                    <div class="col-md-9 col-md-offset-right-3">
+                        <div class="h3__class">
+                            Сертификты соответсвия
+                        </div>
+                        <div class="Certificates__section">
+                            <ul class="certificates__list">
+                                <li><img src="images/Certificates/1.png" alt=""></li>
+                                <li><img src="images/Certificates/2.png" alt=""></li>
+                                <li><img src="images/Certificates/3.png" alt=""></li>
+                                <li><img src="images/Certificates/4.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="by__withProduct">
+                <div class="similar__products by_product">С этим товаром так же покупают: </div>
+                <ul class="nav nav-tabs nav-tabsSlider-product">
+                    <li class="active">
+                        <a data-toggle="tab" href="#first_tab">
+                            Омыватели
+                        </a>
+                    </li>
+                    <li><a data-toggle="tab" href="#two_tab">Очистители</a></li>
+                    <li><a data-toggle="tab" href="#three_tab">Топливные фильтры</a></li>
+                    <li><a data-toggle="tab" href="#four_tab">Моторное масло</a></li>
+                    <li><a data-toggle="tab" href="#five_tab">Инструменты для авто</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="first_tab" class="tab-pane fade in active">
+                        <div class="product__slides">
+                            <div>
+                                <div class="img__product">
+                                    <span class="sale__product">Скидка -10%</span>
+                                    <img src="images/products/1.png" alt="">
+                                </div>
+                                <div class="details__product">
+                                    <span class="code__product">Код товара:39207</span>
+                                    <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                                </div>
+                                <div class="title__product">
+                                    Моторное масло Shell Helix <br>
+                                    HX7 10W-40 4 л
+                                </div>
+                                <div class="total__price">
+                                    <span class="sale__price">104 грн</span>
+                                    <span class="without__sale" style="text-decoration: line-through">&nbsp; &nbsp; 125 грн.</span>
+                                </div>
+                                <div class="by-product">
+                                    <button class="bnt__byProduct">Kупить</button>
+                                    <img src="images/products/libra.png" alt="">
+                                </div>
+                                <div class="ratingByProducts">
+                                    <div class="icon__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="reviewByProducts">
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        <a href="#">
+                                            3 отзыва
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img__product">
+                                    <span class="sale__product">Скидка -10%</span>
+                                    <img src="images/products/1.png" alt="">
+                                </div>
+                                <div class="details__product">
+                                    <span class="code__product">Код товара:39207</span>
+                                    <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                                </div>
+                                <div class="title__product">
+                                    Моторное масло Shell Helix <br>
+                                    HX7 10W-40 4 л
+                                </div>
+                                <div class="total__price">
+                                    <span class="sale__price">104 грн</span>
+                                    <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                                </div>
+                                <div class="by-product">
+                                    <button class="bnt__byProduct">Kупить</button>
+                                    <img src="images/products/libra.png" alt="">
+                                </div>
+                                <div class="ratingByProducts">
+                                    <div class="icon__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="reviewByProducts">
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        <a href="#">
+                                            3 отзыва
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img__product">
+                                    <span class="sale__product">Скидка -10%</span>
+                                    <img src="images/products/1.png" alt="">
+                                </div>
+                                <div class="details__product">
+                                    <span class="code__product">Код товара:39207</span>
+                                    <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                                </div>
+                                <div class="title__product">
+                                    Моторное масло Shell Helix <br>
+                                    HX7 10W-40 4 л
+                                </div>
+                                <div class="total__price">
+                                    <span class="sale__price">104 грн</span>
+                                    <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                                </div>
+                                <div class="by-product">
+                                    <button class="bnt__byProduct">Kупить</button>
+                                    <img src="images/products/libra.png" alt="">
+                                </div>
+                                <div class="ratingByProducts">
+                                    <div class="icon__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="reviewByProducts">
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        <a href="#">
+                                            3 отзыва
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img__product">
+                                    <span class="sale__product">Скидка -10%</span>
+                                    <img src="images/products/1.png" alt="">
+                                </div>
+                                <div class="details__product">
+                                    <span class="code__product">Код товара:39207</span>
+                                    <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                                </div>
+                                <div class="title__product">
+                                    Моторное масло Shell Helix <br>
+                                    HX7 10W-40 4 л
+                                </div>
+                                <div class="total__price">
+                                    <span class="sale__price">104 грн</span>
+                                    <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                                </div>
+                                <div class="by-product">
+                                    <button class="bnt__byProduct">Kупить</button>
+                                    <img src="images/products/libra.png" alt="">
+                                </div>
+                                <div class="ratingByProducts">
+                                    <div class="icon__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="reviewByProducts">
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        <a href="#">
+                                            3 отзыва
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div><div class="img__product">
+                                <span class="sale__product">Скидка -10%</span>
+                                <img src="images/products/1.png" alt="">
+                            </div>
+                                <div class="details__product">
+                                    <span class="code__product">Код товара:39207</span>
+                                    <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                                </div>
+                                <div class="title__product">
+                                    Моторное масло Shell Helix <br>
+                                    HX7 10W-40 4 л
+                                </div>
+                                <div class="total__price">
+                                    <span class="sale__price">104 грн</span>
+                                    <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                                </div>
+                                <div class="by-product">
+                                    <button class="bnt__byProduct">Kупить</button>
+                                    <img src="images/products/libra.png" alt="">
+                                </div>
+                                <div class="ratingByProducts">
+                                    <div class="icon__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="reviewByProducts">
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        <a href="#">
+                                            3 отзыва
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img__product">
+                                    <span class="sale__product">Скидка -10%</span>
+                                    <img src="images/products/1.png" alt="">
+                                </div>
+                                <div class="details__product">
+                                    <span class="code__product">Код товара:39207</span>
+                                    <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                                </div>
+                                <div class="title__product">
+                                    Моторное масло Shell Helix <br>
+                                    HX7 10W-40 4 л
+                                </div>
+                                <div class="total__price">
+                                    <span class="sale__price">104 грн</span>
+                                    <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                                </div>
+                                <div class="by-product">
+                                    <button class="bnt__byProduct">Kупить</button>
+                                    <img src="images/products/libra.png" alt="">
+                                </div>
+                                <div class="ratingByProducts">
+                                    <div class="icon__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="reviewByProducts">
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        <a href="#">
+                                            3 отзыва
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img__product">
+                                    <span class="sale__product">Скидка -10%</span>
+                                    <img src="images/products/1.png" alt="">
+                                </div>
+                                <div class="details__product">
+                                    <span class="code__product">Код товара:39207</span>
+                                    <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                                </div>
+                                <div class="title__product">
+                                    Моторное масло Shell Helix <br>
+                                    HX7 10W-40 4 л
+                                </div>
+                                <div class="total__price">
+                                    <span class="sale__price">104 грн</span>
+                                    <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                                </div>
+                                <div class="by-product">
+                                    <button class="bnt__byProduct">Kупить</button>
+                                    <img src="images/products/libra.png" alt="">
+                                </div>
+                                <div class="ratingByProducts">
+                                    <div class="icon__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="reviewByProducts">
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        <a href="#">
+                                            3 отзыва
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img__product">
+                                    <span class="sale__product">Скидка -10%</span>
+                                    <img src="images/products/1.png" alt="">
+                                </div>
+                                <div class="details__product">
+                                    <span class="code__product">Код товара:39207</span>
+                                    <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                                </div>
+                                <div class="title__product">
+                                    Моторное масло Shell Helix <br>
+                                    HX7 10W-40 4 л
+                                </div>
+                                <div class="total__price">
+                                    <span class="sale__price">104 грн</span>
+                                    <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                                </div>
+                                <div class="by-product">
+                                    <button class="bnt__byProduct">Kупить</button>
+                                    <img src="images/products/libra.png" alt="">
+                                </div>
+                                <div class="ratingByProducts">
+                                    <div class="icon__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="reviewByProducts">
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        <a href="#">
+                                            3 отзыва
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img__product">
+                                    <span class="sale__product">Скидка -10%</span>
+                                    <img src="images/products/1.png" alt="">
+                                </div>
+                                <div class="details__product">
+                                    <span class="code__product">Код товара:39207</span>
+                                    <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                                </div>
+                                <div class="title__product">
+                                    Моторное масло Shell Helix <br>
+                                    HX7 10W-40 4 л
+                                </div>
+                                <div class="total__price">
+                                    <span class="sale__price">104 грн</span>
+                                    <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                                </div>
+                                <div class="by-product">
+                                    <button class="bnt__byProduct">Kупить</button>
+                                    <img src="images/products/libra.png" alt="">
+                                </div>
+                                <div class="ratingByProducts">
+                                    <div class="icon__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="reviewByProducts">
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        <a href="#">
+                                            3 отзыва
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="img__product">
+                                    <span class="sale__product">Скидка -10%</span>
+                                    <img src="images/products/1.png" alt="">
+                                </div>
+                                <div class="details__product">
+                                    <span class="code__product">Код товара:39207</span>
+                                    <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                                </div>
+                                <div class="title__product">
+                                    Моторное масло Shell Helix <br>
+                                    HX7 10W-40 4 л
+                                </div>
+                                <div class="total__price">
+                                    <span class="sale__price">104 грн</span>
+                                    <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                                </div>
+                                <div class="by-product">
+                                    <button class="bnt__byProduct">Kупить</button>
+                                    <img src="images/products/libra.png" alt="">
+                                </div>
+                                <div class="ratingByProducts">
+                                    <div class="icon__rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="reviewByProducts">
+                                        <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                        <a href="#">
+                                            3 отзыва
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="two_tab" class="tab-pane fade">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        A ducimus earum eum fuga inventore ipsa ipsum iste molestias,
+                        nam neque nesciunt, porro quia rerum sunt veniam vero vitae voluptatem?
+                        Accusamus aliquid animi aperiam commodi cupiditate doloribus eligendi
+                        et inventore laudantium libero molestias, officiis possimus quidem ratione,
+                        repellat sit tempore velit. Corporis earum incidunt ipsa ipsum iure magnam
+                        officia ut voluptatibus. Aspernatur commodi delectus ea earum fugit, natus nobis,
+                        numquam optio sunt ullam voluptas voluptates. Laborum nemo odio voluptate.
+                        Animi aspernatur, fugiat fugit ipsam unde voluptatem. Doloremque nam quam
+                        ratione tempore velit. Aliquam consectetur consequatur deserunt hic magnam
+                        placeat quia velit.
+                    </div>
+                    <div id="three_tab" class="tab-pane fade">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        A ducimus earum eum fuga inventore ipsa ipsum iste molestias,
+                        nam neque nesciunt, porro quia rerum sunt veniam vero vitae voluptatem?
+                        Accusamus aliquid animi aperiam commodi cupiditate doloribus eligendi
+                        et inventore laudantium libero molestias, officiis possimus quidem ratione,
+                        repellat sit tempore velit. Corporis earum incidunt ipsa ipsum iure magnam
+                        officia ut voluptatibus. Aspernatur commodi delectus ea earum fugit, natus nobis,
+                        numquam optio sunt ullam voluptas voluptates. Laborum nemo odio voluptate.
+                        Animi aspernatur, fugiat fugit ipsam unde voluptatem. Doloremque nam quam
+                        ratione tempore velit. Aliquam consectetur consequatur deserunt hic magnam
+                        placeat quia velit.
+                    </div>
+                    <div id="four_tab" class="tab-pane fade">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        A ducimus earum eum fuga inventore ipsa ipsum iste molestias,
+                        nam neque nesciunt, porro quia rerum sunt veniam vero vitae voluptatem?
+                        Accusamus aliquid animi aperiam commodi cupiditate doloribus eligendi
+                        et inventore laudantium libero molestias, officiis possimus quidem ratione,
+                        repellat sit tempore velit. Corporis earum incidunt ipsa ipsum iure magnam
+                        officia ut voluptatibus. Aspernatur commodi delectus ea earum fugit, natus nobis,
+                        numquam optio sunt ullam voluptas voluptates. Laborum nemo odio voluptate.
+                        Animi aspernatur, fugiat fugit ipsam unde voluptatem. Doloremque nam quam
+                        ratione tempore velit. Aliquam consectetur consequatur deserunt hic magnam
+                        placeat quia velit.
+                    </div>
+                    <div id="five_tab" class="tab-pane fade">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        A ducimus earum eum fuga inventore ipsa ipsum iste molestias,
+                        nam neque nesciunt, porro quia rerum sunt veniam vero vitae voluptatem?
+                        Accusamus aliquid animi aperiam commodi cupiditate doloribus eligendi
+                        et inventore laudantium libero molestias, officiis possimus quidem ratione,
+                        repellat sit tempore velit. Corporis earum incidunt ipsa ipsum iure magnam
+                        officia ut voluptatibus. Aspernatur commodi delectus ea earum fugit, natus nobis,
+                        numquam optio sunt ullam voluptas voluptates. Laborum nemo odio voluptate.
+                        Animi aspernatur, fugiat fugit ipsam unde voluptatem. Doloremque nam quam
+                        ratione tempore velit. Aliquam consectetur consequatur deserunt hic magnam
+                        placeat quia velit.
+                    </div>
+                </div>
+            </div>
+            <div class="shoppers__choose">
+                <div class="shoppers__groupTitle">
+                    <div class="shoppers__products">
+                        Покупатели вибирают для :
+                    </div>
+                    <select id="shoppers__byIt">
+                        <option><span>Volcwagen golf,19</span></option>
+                        <option>Land Rover</option>
+                        <option>Kia</option>
+                        <option>Dewoo</option>
+                    </select>
+                </div>
+                <div class="shoppers__slides product__slides">
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/shoppers/1.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/shoppers/2s.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/shoppers/3.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/shoppers/4.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div><div class="img__product">
+                        <span class="sale__product">Скидка -10%</span>
+                        <img src="images/shoppers/5s.png" alt="">
+                    </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div></div>
+
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/shoppers/1.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/shoppers/2s.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/shoppers/3.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/shoppers/4.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img__product">
+                            <span class="sale__product">Скидка -10%</span>
+                            <img src="images/shoppers/5s.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="code__product">Код товара:39207</span>
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                            <span class="without__sale">&nbsp; &nbsp; 125 грн.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Watched">
+                <div class="watched__groupTitle">
+                    <div class="shoppers__products">
+                        Вы просматривали :
+                    </div>
+                    <div class="all__watchedProduct">
+                        <a href="#">
+                            Все просмотренние товары
+                        </a>
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="watched__productSlides product__slides">
+                    <div class="watchedSlide-wrapper">
+                        <div class="img__product">
+                            <img src="images/watched/1.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                        </div>
+                        <div class="by-product">
+                            <button class="bnt__byProduct">Kупить</button>
+                            <img src="images/products/libra.png" alt="">
+                        </div>
+                        <div class="ratingByProducts">
+                            <div class="icon__rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="reviewByProducts">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <a href="#">
+                                    3 отзыва
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watchedSlide-wrapper">
+                        <div class="img__product">
+                            <img src="images/watched/2.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                        </div>
+                        <div class="by-product">
+                            <button class="bnt__byProduct">Kупить</button>
+                            <img src="images/products/libra.png" alt="">
+                        </div>
+                        <div class="ratingByProducts">
+                            <div class="icon__rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="reviewByProducts">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <a href="#">
+                                    3 отзыва
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watchedSlide-wrapper">
+                        <div class="img__product">
+                            <img src="images/watched/3.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                        </div>
+                        <div class="by-product">
+                            <button class="bnt__byProduct">Kупить</button>
+                            <img src="images/products/libra.png" alt="">
+                        </div>
+                        <div class="ratingByProducts">
+                            <div class="icon__rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="reviewByProducts">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <a href="#">
+                                    3 отзыва
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watchedSlide-wrapper">
+                        <div class="img__product">
+                            <img src="images/watched/4.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                        </div>
+                        <div class="by-product">
+                            <button class="bnt__byProduct">Kупить</button>
+                            <img src="images/products/libra.png" alt="">
+                        </div>
+                        <div class="ratingByProducts">
+                            <div class="icon__rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="reviewByProducts">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <a href="#">
+                                    3 отзыва
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watchedSlide-wrapper">
+                        <div class="img__product">
+                            <img src="images/watched/5.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                        </div>
+                        <div class="by-product">
+                            <button class="bnt__byProduct">Kупить</button>
+                            <img src="images/products/libra.png" alt="">
+                        </div>
+                        <div class="ratingByProducts">
+                            <div class="icon__rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="reviewByProducts">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <a href="#">
+                                    3 отзыва
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watchedSlide-wrapper">
+                        <div class="img__product">
+                            <img src="images/watched/1.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                        </div>
+                        <div class="by-product">
+                            <button class="bnt__byProduct">Kупить</button>
+                            <img src="images/products/libra.png" alt="">
+                        </div>
+                        <div class="ratingByProducts">
+                            <div class="icon__rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="reviewByProducts">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <a href="#">
+                                    3 отзыва
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watchedSlide-wrapper">
+                        <div class="img__product">
+                            <img src="images/watched/2.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                        </div>
+                        <div class="by-product">
+                            <button class="bnt__byProduct">Kупить</button>
+                            <img src="images/products/libra.png" alt="">
+                        </div>
+                        <div class="ratingByProducts">
+                            <div class="icon__rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="reviewByProducts">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <a href="#">
+                                    3 отзыва
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watchedSlide-wrapper">
+                        <div class="img__product">
+                            <img src="images/watched/3.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                        </div>
+                        <div class="by-product">
+                            <button class="bnt__byProduct">Kупить</button>
+                            <img src="images/products/libra.png" alt="">
+                        </div>
+                        <div class="ratingByProducts">
+                            <div class="icon__rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="reviewByProducts">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <a href="#">
+                                    3 отзыва
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watchedSlide-wrapper">
+                        <div class="img__product">
+                            <img src="images/watched/4.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                        </div>
+                        <div class="by-product">
+                            <button class="bnt__byProduct">Kупить</button>
+                            <img src="images/products/libra.png" alt="">
+                        </div>
+                        <div class="ratingByProducts">
+                            <div class="icon__rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="reviewByProducts">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <a href="#">
+                                    3 отзыва
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="watchedSlide-wrapper">
+                        <div class="img__product">
+                            <img src="images/watched/5.png" alt="">
+                        </div>
+                        <div class="details__product">
+                            <span class="instock__product">
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                В наличии
+                            </span>
+                        </div>
+                        <div class="title__product">
+                            Моторное масло Shell Helix <br>
+                            HX7 10W-40 4 л
+                        </div>
+                        <div class="total__price">
+                            <span class="sale__price">104 грн</span>
+                        </div>
+                        <div class="by-product">
+                            <button class="bnt__byProduct">Kупить</button>
+                            <img src="images/products/libra.png" alt="">
+                        </div>
+                        <div class="ratingByProducts">
+                            <div class="icon__rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </div>
+                            <div class="reviewByProducts">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                <a href="#">
+                                    3 отзыва
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer__wrapper">
+
+            <div class="row footer__row">
+                <div class="container">
+                    <div class="col-md-9">
+                        <div class="left__footerSection">
+                            <div class="col-md-5">
+                                <h3 class="h3class-footer">Каталог</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="footer__link">
+                                            <li><a href="#">Электроника</a></li>
+                                            <li><a href="#">Звук и видео</a></li>
+                                            <li><a href="#">Запчасти и расходники</a></li>
+                                            <li><a href="#">Свет (освещение)</a></li>
+                                            <li><a href="#">Интерьер</a></li>
+                                            <li><a href="#">Экстерьер</a></li>
+                                            <li><a href="#">Колеса</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="footer__link">
+                                            <li><a href="#">Багаж и крепление</a></li>
+                                            <li><a href="#">Автохимия</a></li>
+                                            <li><a href="#">Техпомощь</a></li>
+                                            <li><a href="#">Инструмент</a></li>
+                                            <li><a href="#">Туризм</a></li>
+                                            <li><a href="#">4х4 джипинг</a></li>
+                                            <li><a href="#">Мото</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <h3 class="h3class-footer">Компания</h3>
+                                <ul class="footer__link">
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Магазины</a></li>
+                                    <li><a href="#">Партнеры</a></li>
+                                    <li><a href="#">Оптовым покупателям</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <h3 class="h3class-footer">Покупателям</h3>
+                                <ul class="footer__link">
+                                    <li><a href="#">Доставка</a></li>
+                                    <li><a href="#">Оплата</a></li>
+                                    <li><a href="#">Гарантия</a></li>
+                                    <li><a href="#">Кредит</a></li>
+                                    <li><a href="#">Бонусная программа</a></li>
+                                    <li><a href="#">Акции</a></li>
+                                    <li><a href="#">Карта сайта</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h3 class="h3class-footer">Информация</h3>
+                                <ul class="footer__link">
+                                    <li><a href="#">Как выбрать</a></li>
+                                    <li><a href="#">Сравнительные тесты</a></li>
+                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="#">Часто задаваемые вопросы</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="autors">
+                            <ul class="autors__reserved">
+                                <li>
+                                    <p>
+                                        <i class="glyphicon glyphicon-copyright-mark"></i>
+                                        2016, База автозвука
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Разработано в <span>Турум-бурум</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="right__footerSection">
+                            <div class="info__footer">
+                                <h3 class="h3class-footerRight">0 800 30-15-85</h3>
+                                <p class="info__textFooter">
+                                    Бесплатно со стационарных
+                                    и мобильных телефонов Украины
+                                </p>
+                                <div class="social__iconWrapper">
+                                    <p>Следите за нами в соцсетях</p>
+                                    <ul class="social__icon">
+                                        <li class="facebook">
+                                            <a href="#">
+                                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="google-plus">
+                                            <a href="#">
+                                                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="twitter">
+                                            <a href="#">
+                                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="social__icon">
+                                        <li class="youtube">
+                                            <a href="#">
+                                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="vk">
+                                            <a href="#">
+                                                <i class="fa fa-vk" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                        <li class="instagram">
+                                            <a href="#">
+                                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+</div>
+<script src="js/vendor.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/vendor/jquery.fitvids.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/vendor/jquery.easing.1.3.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
