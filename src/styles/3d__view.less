@@ -1,5 +1,14 @@
-.row__bigProduct {
-  margin: 43px 0 70px;
+.viewSection-3d {
+
+}
+
+h1 {
+  font-family: 'ProximaNovaBold';
+  font-size: 34px;
+  font-weight: bold;
+}
+.Row-bigProduct {
+  margin-top: 43px;
 }
 .product-slider {
   position: relative;
@@ -7,32 +16,42 @@
     position: absolute;
     top: 0;
     padding: 12px 15px;
+    width: 65px;
+    height: 65px;
   }
   .twoImg {
     position: absolute;
-    top: 87px;
+    top: 74px;
     //padding: 12px 15px;
+    width: 65px;
+    height: 65px;
   }
   .threeImg {
     position: absolute;
-    top: 174px;
+    top: 148px;
     padding: 12px 15px;
+    width: 65px;
+    height: 65px;
   }
   .fourImg {
     position: absolute;
     top: 0;
-    left: 80px;
+    left: 74px;
     padding: 12px 15px;
+    width: 65px;
+    height: 65px;
   }
   .fiveImg {
     position: absolute;
-    top: 87px;
-    left: 80px;
+    top: 74px;
+    left: 74px;
     padding: 12px 15px;
+    width: 65px;
+    height: 65px;
   }
 }
 .bxslider li img {
-  margin-left: 212px;
+  margin-left: 215px;
 }
 .bx-pager img {
   border: 1px solid #e9eaeb;
@@ -43,42 +62,83 @@
 .bx-wrapper {
   border: none!important;
   box-shadow: none!important;
+  img {
+    display: block;
+    max-width: 278px!important;
+    max-height: 378px;
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.info__3dview {
-  padding: 30px;
+
+
+.info-3dview {
+  display: inline-block;
+  //margin-top: 40px;
+  padding: 30px 30px 25px;
   background: #f2f2f2;
-  span {
+  max-width: 361px;
+  margin: 0 auto;
+  &__ratingInfo {
+    position: absolute;
+    top: -45px;
+    width: 100%;
+    ul {
+      display: flex;
+      li {
+        margin-right: 28px;
+        span {
+          color: #9a9a9a;
+        }
+      }
+      .icon__rating3dView {
+        color: #ffdc2c;
+      }
+    }
+    span {
+      font-family: 'ProximaNovaRegular';
+      font-size: 13px;
+    }
+  }
+  &__price {
     display: block;
     font-size: 40px;
     font-family: 'ProximaNovaBold';
     color: #999999;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
-  button {
+  .BtnMessage {
     font-family: 'ProximaNovaBold';
     font-size: 18px;
     color: @standartTextColor;
-    padding: 18px 40px;
-    border: 1px solid #fb2539;
+    //padding: 18px 44px 20px 39px;
+    //padding: 18px 0 20px;
+    border: 2px solid #fb2539;
     background-color: transparent;
     font-weight: bold;
     margin-bottom: 30px;
+    width: 100%;
+    max-width: 296px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  button:focus {
+  .BtnMessage:focus {
     outline: none;
   }
-  .info__3dviewText {
+  &__Text {
     margin-bottom: 42px;
     font-family: 'ProximaNovaRegular';
     font-size: 12px;
     max-width: 290px;
     color: #777777;
   }
-  .bottomInfo__3dview {
+  .bottomInfo-3dview {
     display: flex;
     align-items: center;
-    .share {
+    &__share {
       margin-right: 34px;
       display: flex;
       align-items: center;
@@ -88,12 +148,12 @@
         margin-right: 11px;
       }
       .text__share {
-        font-size: 12px;
+        font-size: 13px;
         font-family: 'ProximaNovaRegular';
         color: @standartTextColor;
       }
     }
-    .compare {
+    &__compare {
       display: flex;
       align-items: center;
       .text__compare {
@@ -105,45 +165,92 @@
     }
   }
 }
-.product__choice3dview {
+.reviewByProducts__link {
+  text-decoration: none;
+  color: #777777;
+  font-size: 13px;
+  font-family: 'ProximaNovaRegular';
+  text-decoration: underline;
+  &:hover {
+    color: #777777;
+  }
+}
+.product-choice3dview {
+  margin-top: 40px;
   position: relative;
-  .article__similar {
-    font-family: 'ProximaNovaBold';
-    font-size: 22px;
-    color: @standartTextColor;
-    position: absolute;
-    top: -16px;
-    left: 25%;
-    background: #ffffff;
-  }
-  .instockSidebar {
-    color: #57ae85;
-    margin-bottom: 0!important;
-  }
-  .showSimilarProduct {
-    color: #fc5161;
-    position: absolute;
-    bottom: -9px;
-    left: 25%;
-  }
-}
-.ratingInfo__3dviews {
-  position: absolute;
-  top: -30px;
-  width: 100%;
-  ul {
-    display: flex;
-    li {
-      margin-right: 30px;
-    }
-    .icon__rating3dView {
-      color: #ffdc2c;
-    }
-  }
-  span {
-    font-family: 'ProximaNovaRegular';
+  &__Sidebar_another {
     font-size: 13px;
+    font-family: 'ProximaNovaRegular';
+    margin-bottom: 12px;
+    color: #57ae85;
+  }
+  &__SidebarInfo {
+    font-size: 13px;
+    font-family: inherit;
+    font-family: 'ProximaNovaRegular';
+    color: @standartTextColor;
+  }
+  &__Coast {
+    font-size: 20px;
+    font-family: 'ProximaNovaBold';
+    color: @standartTextColor;
+  }
+  &__link {
+    font-family: ProximaNovaRegular;
+    font-size: 13px;
+    color: #fd959c;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    position: absolute;
+    bottom: -10px;
+    left: 63px;
+    background-color: #ffffff;
+  }
+
+  //&__articleSimilar {
+  //  font-family: 'ProximaNovaBold';
+  //  font-size: 22px;
+  //  color: @standartTextColor;
+  //  position: absolute;
+  //  top: -16px;
+  //  left: 25%;
+  //  background: #ffffff;
+  //}
+  //&__instockSidebar {
+  //  color: #57ae85;
+  //  margin-bottom: 0!important;
+  //}
+  //.showSimilarProduct {
+  //  color: #fc5161;
+  //  position: absolute;
+  //  bottom: -9px;
+  //  left: 25%;
+  //}
+}
+//.ratingInfo__3dviews {
+//  position: absolute;
+//  top: -30px;
+//  width: 100%;
+//  ul {
+//    display: flex;
+//    li {
+//      margin-right: 30px;
+//    }
+//    .icon__rating3dView {
+//      color: #ffdc2c;
+//    }
+//  }
+//  span {
+//    font-family: 'ProximaNovaRegular';
+//    font-size: 13px;
+//  }
+//}
+.product-choice {
+  &__choiceImg {
+    margin-bottom: 37px;
+    img {
+      max-height: 149px;
+    }
   }
 }
-
 

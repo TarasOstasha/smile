@@ -21,105 +21,170 @@ body,html {
 }
 
 //**HEADER TOP**//
-.header__top-section {
+.headerTop-section {
   background: @headerTopColor;
 }
-.header__top {
+.headerTop {
   display: flex;
   align-items: center;
   justify-content: space-between;
   //padding: 18px 0;
-}
-.Left-nav__menu {
-  display: flex;
-  padding: 0;
-  li {
-    margin: 0px 17px;
-    a {
+  &__LeftNavMenu {
+    display: flex;
+    padding: 0;
+    margin-right: 120px;
+    li {
+      margin: 0px 17px;
+      a {
+        font-family: 'ProximaNovaRegular';
+        font-size: 13px;
+        color: @headerTopFontColor;
+      }
+      a:hover {
+        color: @headerTopFontColorHover;
+      }
+    }
+    li:first-child {
+      margin-left: 0;
+    }
+  }
+  &__lenguageNavMenu {
+    display: flex;
+    padding: 0;
+    margin-right: 45px;
+    li {
+      margin-right: 26px;
+      position: relative;
+      a {
+        font-family: 'ProximaNovaRegular';
+        font-size: 13px;
+        color: @headerTopFontColor;
+        padding: 18px 0;
+      }
+      a:hover {
+        color: @headerTopFontColorHover;
+      }
+      a:hover:after {
+        content: '';
+        background: @headerTopFontColorHoverUsers;
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        top: 36px;
+      }
+    }
+  }
+  &__cityChoice {
+    span {
       font-family: 'ProximaNovaRegular';
-      font-size: 14px;
+      font-size: 13px;
       color: @headerTopFontColor;
     }
-    a:hover {
-      color: @headerTopFontColorHover;
-    }
   }
-}
-.lenguage-nav_menu {
-  display: flex;
-  padding: 0;
-  li {
-    margin-right: 26px;
-    position: relative;
-    a {
+  &__usersMenu {
+    display: flex;
+    padding: 0;
+    margin-left: 150px;
+    li a {
       font-family: 'ProximaNovaRegular';
-      font-size: 14px;
+      font-size: 13px;
       color: @headerTopFontColor;
-      padding: 18px 0;
     }
-    a:hover {
-      color: @headerTopFontColorHover;
+    li a:hover {
+      color: @headerTopFontColorHoverUsers;
     }
-    a:hover:after {
-      content: '';
-      background: @headerTopFontColorHoverUsers;
-      display: inline-block;
-      width: 100%;
-      height: 1px;
-      position: absolute;
-      left: 0;
-      top: 36px;
+    .enter-user {
+      margin-right: 38px;
     }
   }
 }
-.users__menu {
-  display: flex;
-  padding: 0;
-  li a {
-    font-family: 'ProximaNovaRegular';
-    font-size: 14px;
-    color: @headerTopFontColor;
-  }
-  li a:hover {
-    color: @headerTopFontColorHoverUsers;
-  }
-  .enter-user {
-    padding: 0px 36px;
-  }
-}
-.city__choice {
-  span {
-    font-family: 'ProximaNovaRegular';
-    font-size: 14px;
-    color: @headerTopFontColor;
-  }
-}
+
 #city {
-  padding: 18px 14px;
+  width: 80px;
+  padding: 18px 0;
+  //padding: 18px 14px;
   border-top: none;
   border-bottom: none;
   border-color:#d8d9dc;
   font-family: 'ProximaNovaRegular';
-  font-size: 14px;
+  font-size: 13px;
   color: @headerTopFontColor;
   background-color: transparent;
-  margin-left: 18px;
+  margin-left: 20px;
 }
 
 //**HEADER MIDDLE**//
-.logo a {
-  display: inline-block;
-}
-.header__middle {
+.headerMiddle {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  &____logo {
+    a {
+      display: inline-block;
+    }
+  }
+  &__searchForm {
+    width: 100%;
+    max-width: 345px;
+    position: relative;
+    margin: 0px 32px 0px 34px;
+    input {
+      font-size: 13px;
+      font-family: 'ProximaNovaRegular';
+      color: #bbbbbb;
+      padding: 16px 59px 16px 24px;
+      border-radius: 30px;
+      width: 100%;
+      border: 1px solid #d8d9dc;
+      &:focus {
+        outline: none;
+      }
+    }
+    .searchHeader {
+      font-size: 22px;
+      position: absolute;
+      top: 14px;
+      right: 21px;
+    }
+  }
+  &__IconNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45px;
+    li a img {
+      //width: 25px;
+      //height: 25px;
+    }
+    li {
+      text-align: center;
+      padding: 0 12px;
+    }
+    li:last-child {
+      padding-right: 0;
+    }
+    a {
+      display: inline-block;
+    }
+    p {
+      font-family: 'ProximaNovaRegular';
+      font-size: 12px;
+      color: #8e8e8e;
+      margin: 13px 0 0 0;
+    }
+    &_img {
+      height: 27px;
+      width: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
 }
-.header__middleIconNav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .favorites__product {
   position: relative;
   &:after {
@@ -136,63 +201,34 @@ body,html {
     color: #ffffff;
   }
 }
-.search__form {
-  width: 100%;
-  max-width: 345px;
-  position: relative;
-  input {
-    padding: 16px 23px;
-    border-radius: 30px;
-    width: 100%;
-    border: 1px solid #d8d9dc;
-    &:focus {
-      outline: none;
-    }
-  }
-  .searchHeader {
-    font-size: 22px;
-    position: absolute;
-    top: 14px;
-    right: 14px;
-  }
-}
+
 .callback {
-  .number__callback {
+  width: 100%;
+  &__number {
     color: #333333;
-    font-family: 'ProximaNovaRegular';
-    font-size: 14px;
-    font-weight: bold;
+    font-family: 'ProximaNovaBold';
+    font-size: 18px;
+    //font-weight: bold;
   }
-  .callback__link {
-    padding: 10px 20px;
+  &__icon {
+    margin: 0 16px 0 8px;
+  }
+  &__link {
+    padding: 9px 22px 9px 19px;
     border: 2px solid #ffdc2c;
     color: #5c5c5c;
-  }
-  .callback__link:hover {
-    text-decoration: none;
-  }
-}
-.header__middleIconNav {
-  li a img {
-    width: 25px;
-    height: 25px;
-  }
-  li {
-    text-align: center;
-    padding: 0 12px;
-  }
-  a {
-    display: inline-block;
-  }
-  p {
     font-family: 'ProximaNovaRegular';
-    font-size: 14px;
-    color: #555555;
+    font-size: 13px;
+    color: #333333;
+  }
+  &__link:hover {
+    text-decoration: none;
+    color: inherit;
   }
 }
 
 //**HEADER BOTTOM**//
-.header__bottom {
+.headerBottom {
   background: #3c3f43;
 }
 .main__navMenu {
@@ -209,11 +245,21 @@ body,html {
     a{
       text-transform: uppercase;
       font-family: 'ProximaNovaRegular';
-      font-size: 14px;
+      font-size: 13px;
       color: #ffffff;
       padding: 20px 0;
       .icon__bottomHeader {
         color: #ebc712;
+      }
+    }
+    .main__navMenu_firstChild {
+      text-transform: none;
+      font-family: 'ProximaNovaRegular';
+      font-size: 16px;
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
       }
     }
     &:hover {
@@ -221,6 +267,20 @@ body,html {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //scropp-up
 a.back-to-top {

@@ -5,6 +5,7 @@ $(document).ready(function(){
         slidesToShow: 5,
         slidesToScroll: 1,
         arrows:true,
+        centerPadding: '30px',
         nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
         prevArrow: '<i class="fa fa-angle-left" aria-hidden="true"></i>'
         // centerMode:true
@@ -12,7 +13,7 @@ $(document).ready(function(){
         // autoplay:true
     });
 
-    $('.article__slides').slick({
+    $('.article-slides').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -109,7 +110,7 @@ function openTabs(event, tabsName) {
 document.getElementById("defaultCharacteristics").click();
 
 //accordion//
-var BtnClickHandler = document.getElementsByClassName('more__characteristics');
+var BtnClickHandler = document.getElementsByClassName('table-productContent__more_characteristics');
 for(var i = 0; i < BtnClickHandler.length; i++) {
     BtnClickHandler[i].onclick = function() {
         this.classList.toggle('active');
